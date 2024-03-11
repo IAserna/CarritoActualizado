@@ -1,0 +1,8 @@
+{
+    "productos": [
+        {"id":1, "nombre": "Rosa Pink Salon De Belleza Unisex", "direccion": "Puebla #17 Dolores Hidalgo C.I.N", "telefono": "418-109-94-21", "precio": 100, "imagen": "https://thumbs.dreamstime.com/b/ilustraci%C3%B3n-del-logotipo-sal%C3%B3n-de-belleza-dorado-ilustraciones-hermosas-para-salones-y-cara-femenina-peinados-en-color-brillante-228490013.jpg"},
+        {"id":2, "nombre": "Divan's Salon", "direccion": "Oaxaca #24 Dolores Hidalgo C.I.N", "telefono": "418-139-54-47", "precio": 150, "imagen": "https://static.vecteezy.com/system/resources/previews/000/391/458/original/women-39-s-beauty-salon-logo-vector.jpg"},
+        {"id":3, "nombre": "BeautyMiauu", "direccion": "Angeles #30 Dolores Hidalgo C.I.N", "telefono": "418-118-83-73", "precio": 50, "imagen":"https://t4.ftcdn.net/jpg/01/09/21/19/240_F_109211936_xC9d3U0PtSun77ls23LpBHpXo1reznLn.jpg"}
+        
+    ]
+}

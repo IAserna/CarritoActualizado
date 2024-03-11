@@ -1,0 +1,18 @@
+<p-card header="{{producto?.nombre | titlecase}}" >
+    <ng-template pTemplate="header">
+        <img alt="Card" *ngIf="producto?.imagen" [src]="producto?.imagen" class="imagen-card" />
+    </ng-template>
+    <p-tag class="etiquetas" icon="pi pi-info-circle" severity="info" value="">Dirección</p-tag>
+    <p>
+        {{producto?.direccion }}
+    </p>
+    <p></p>
+    <p-tag class="etiquetas" icon="pi pi-info-circle" severity="danger" value="">Teléfono</p-tag>
+    <p>{{producto?.telefono| uppercase}}</p>
+   
+    <span >{{producto?.precio | currency}}</span>
+    <ng-template pTemplate="footer">
+        <p-button (onClick)="add()" label="Agendar"  icon="pi pi-cart-plus"></p-button>
+    </ng-template>
+  </p-card>
+  

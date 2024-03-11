@@ -1,0 +1,34 @@
+<div *ngIf="carrito.length > 0; else carritoVacio">
+<table class="tabla">
+  <thead>
+    <tr>
+        <th class="columna">Logo</th> 
+        <th class="columna">Servicio</th>
+        <th class="columna">Dirección</th>
+        <th class="columna">Cantidad</th>
+        <th>Total</th>
+    </tr>
+  </thead>
+   <tbody>
+    <tr *ngFor="let producto of carrito" class="producto">
+        <td>
+            <img class="Carriimg" [src]="producto.imagen" alt="{{producto.nombre}}">
+        </td>
+        <td>{{ producto.nombre}}</td>
+        <td>{{producto.direccion}}</td>
+        <td>{{producto.Cantidad}}</td>
+        <td>{{(producto.precio * producto.Cantidad).toFixed(2)}}</td>
+    </tr>
+   </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4" class="text-end"><strong>Total a Pagar:</strong></td>
+            <td>${{ calcularTotal().toFixed(2)}}</td>
+        </tr>
+    </tfoot>
+
+</table>
+</div>
+<ng-template #carritoVacio>
+    <p>Carrito Vacio</p>
+</ng-template>
